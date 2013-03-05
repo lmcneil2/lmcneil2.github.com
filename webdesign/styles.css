@@ -1,0 +1,125 @@
+/*
+ 
+* Default styles
+
+ */
+
+@media screen {
+
+
+
+
+
+html{
+	background-color:#ccc;
+
+}
+
+body{
+	background-color:white;
+	padding:20px;
+
+}
+
+header{
+	background-color:#36c;
+	padding:10px;
+	color:white;
+	
+}
+
+header h1{
+
+	margin:0;
+
+}
+
+
+nav{
+	background-color: #38c;
+	padding-top:5px;
+	padding-bottom:5px;
+	text-align:center;
+}
+
+nav ul{
+   list-style: none; 
+   padding-left: 0;
+   
+}
+
+nav li{
+   display:inline;
+   padding:10px;
+
+}
+
+
+}
+
+
+/*
+ 
+* 500px and wider
+ 
+*/
+
+@media screen and (min-width: 500px) {
+
+
+ nav{
+
+	float:left;
+	width:30%;
+
+}
+
+nav a{
+	display:block;
+	padding:10px;
+}
+
+#content{
+	float:right;
+	width:60%;
+}
+footer{
+	clear:both;
+}
+
+
+
+
+}
+
+
+/*
+ 
+* 768px and wider
+ 
+*/
+
+@media screen and (min-width: 768px) {
+
+
+
+
+
+
+}
+
+
+
+/*
+
+* Print styles
+ 
+*/
+
+@media print {
+
+
+
+
+
+}
