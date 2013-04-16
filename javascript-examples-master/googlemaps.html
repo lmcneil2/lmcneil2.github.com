@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style type="text/css">
+      #map { height: 500px; }
+    </style>
+
+    <script type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAzygx7txI_uXKJX1JD_czX7iH8BGRubI0&sensor=false">
+    </script>
+
+    <script type="text/javascript">
+        // Based on tutorial at http://www.dreamdealer.nl/tutorials/placing_multiple_markers_on_a_google_map.html
+
+        // Our map markers as an array. First value is content of info window. Second is lat. Third is long.
+        // Find lat/long by searching, or use http://universimmedia.pagesperso-orange.fr/geo/loc.htm
+        var markers = [
+            ['Smithsonian', 38.88894, -77.02607],
+            ['Capitol Building', 38.88992, -77.00923],
+            ['White House', 38.89768, -77.03650]
+        ];
+
+        // Function to create our map.
+        function initialize() {
+            // Set a lat/long to center on.
+            var centerLocation = new google.maps.LatLng(38.890, -77.0300);
+
+            // Options for our map. See https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+            var mapOptions = {
+                zoom: 14,
+                center: centerLocation,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            };
+
+            // Create a new map using the 'map-canvas' element.
+            var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+
+            // Create var for our info window for markers.
+            var infowindow = new google.maps.InfoWindow();
+
+            // Empty vars for marker and counter, which we'll use later.
+            var marker, i;
+
+            // Loop through markers, create marker for each and listen for click to show info.
+            for (i = 0; i < markers.length; i++) {
+                marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(markers[i][1], markers[i][2]),
+                    map: map
+                });
+                google.maps.event.addListener(marker, 'click', (function(marker, i) {
+                    return function() {
+                        infowindow.setContent(markers[i][0]);
+                        infowindow.open(map, marker);
+                    }
+                })(marker, i));
+            }
+
+            // Keeps map on center if window is resized.
+            google.maps.event.addDomListener(window, 'resize', function() {
+                map.setCenter(centerLocation);
+            });
+
+        }
+
+        // Run initialize function on window:load.
+        google.maps.event.addDomListener(window, 'load', initialize);
+
+    </script>
+  </head>
+  <body>
+  <h1>Places in Washington, D.C.</h1>
+  <div id="map"></div>
+  </body>
+</html>
