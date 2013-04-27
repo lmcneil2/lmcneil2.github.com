@@ -66,9 +66,26 @@ nav{
 
 	font-size:20px;
 
+
+}
+a:visited { 	
+    
+	text-decoration: none;
+
+	list-style-type: none;
+
+	color:#ccccd7;
    
 }
 
+a:hover { 	
+    
+	text-decoration: underline;
+
+	list-style-type: none;
+
+	color:#ffffff;
+}
 img {
 	max-width:80%;
 	margin: auto;
