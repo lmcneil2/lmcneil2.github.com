@@ -36,7 +36,12 @@ h1{
 
 	margin:0;
 
-	color: #353460;}
+	color: #353460;
+}
+
+header h1{
+	font-size:42pt;
+}
 
 a:link { 	
     
@@ -53,7 +58,7 @@ h2{
 	font-family:'Special Elite', cursive;
 
 	text-align:right;
-	font-size: 14pt;
+	font-size: 24pt;
 }
 
 nav{
@@ -121,6 +126,18 @@ nav li{
    margin-bottom:5px;
 }
 
+
+nav figure{
+    text-align:center;
+    color:#353460;
+    
+    font-family: 'Cutive', serif;
+    font-size: 14pt;
+    font-weight: bolder;
+}
+
+
+
 #sidebar {
 
     background-color: #ccccd7;
@@ -133,6 +150,8 @@ nav li{
     min-width:140px;
  
 }
+
+
 
 #content {
 
@@ -163,6 +182,9 @@ blockquote h1{
 }
 blockquote p{
 	display:inline;
+	font-family:'Special Elite', cursive;
+	font-size: 24pt;
+	color:#353460;
 }
 
 blockquote img{
@@ -179,14 +201,17 @@ blockquote img{
 	height:500px;
 	background-color:black;
 	text-align:center;
-	color:white;
+	color:white;        
 	
 }
 
 #slideshow div{
-	width:100%;	
-	height:80%;
-	text-align:center;
+    width:100%;	
+    height:80%;
+    text-align:center;
+    color:#353460;
+    
+    
 }
 
 #slideshow div img{
@@ -199,18 +224,22 @@ blockquote img{
 	margin:0;
 	padding:0;
 	text-align:center;
+        font-family: 'Cutive', serif;
+
+        font-size: 24pt;
 }
 
 
-/*footer {
+*/footer {
 
     background-color: #9b9cb1;
 
-    color: #ffffff;
+    color:white;
     
-    font-family: 'Noto Serif', serif;
+    font-family: 'Poiret One', serif;
 
+    font-size: 14pt;	
     position: fixed;
-}*/
-
+}
+*/
 
