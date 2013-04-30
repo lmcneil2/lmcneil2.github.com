@@ -6,9 +6,21 @@ $('#slideshow').cycle({
     fit:0,
     slideResize:1,
     timeout:0,
-    next:'#slideshow' //change to button div
+    next:'#buttonR',
+    prevNextEvent:'click.cycle',	   
 
 });
+
+$('#slideshow').cycle({ 
+    fx:'scrollRight',  
+    fit:0,
+    slideResize:1,
+    timeout:0,
+    prevNextEvent:'click.cycle',	    
+    prev:'#buttonL'
+
+});
+
 
 });
 
