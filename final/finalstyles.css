@@ -69,6 +69,41 @@ a:link {
 }
 
 
+p a:link{
+	color:000;
+}
+
+p a:visited{
+	color:#9B9cb1;
+}
+
+sup {
+	font-size:10pt;
+	line-height:8pt;
+}
+
+sup a:link{
+	color:#000;
+}
+
+
+sup a:visited{
+	color:black;
+}
+
+ol.footnote a:link{
+	color:black;
+}
+
+ol.footnote a:visited{
+	color:black;
+}
+
+ol.footnote {
+	font-size: 10pt;
+}
+
+
 h2{
 	color:#353460;
 	font-family:'Special Elite', cursive;
@@ -180,6 +215,7 @@ nav figure{
     margin: 2% 2% 2% 2%;
     padding: 10px; 
     min-width:160px;
+
     }
 
 blockquote {
@@ -224,7 +260,8 @@ blockquote img{
 	text-align:center;
 	color:white; 
 	margin:0 auto; 
-	display:inline-block;      
+	display:inline-block;  
+    
 	
 }
 
@@ -233,8 +270,8 @@ blockquote img{
     height:80%;
     text-align:center;
     color:#353460;
-    
-    
+ 
+    margin-top: 40px;    
 }
 
 #slideshow div img{
@@ -244,7 +281,7 @@ blockquote img{
 }
 
 #slideshow p{
-	margin:0;
+	margin-top:20px;
 	padding:0;
 	text-align:center;
         font-family: 'Cutive', serif;
@@ -265,7 +302,7 @@ blockquote img{
 	margin:0px;
 	width: 40px;
 	height:40px;
-	vertical-align:middle;
+	
 }
 
 
