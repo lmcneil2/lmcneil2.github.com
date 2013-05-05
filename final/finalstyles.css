@@ -253,6 +253,26 @@ blockquote img{
 
 }
 
+blockquote.plain{
+	background-color:white;
+	padding:0;
+	width:80%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom:40px;
+	min-width:140px;
+	text-align:left;
+	
+}
+
+blockquote.plain p{
+	font-size:14pt;
+	display:inline;
+	text-align:left;
+	font-family:'Noto Serif', serif;
+	color:#000;
+}
+
 #slideshow {
 	width: 80%;
 	height:500px;
@@ -282,7 +302,7 @@ blockquote img{
 
 #slideshow p{
 	margin-top:20px;
-	padding:0;
+	padding:0 20px;
 	text-align:center;
         font-family: 'Cutive', serif;
 
