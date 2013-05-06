@@ -77,6 +77,7 @@ p a:visited{
 	color:#9B9cb1;
 }
 
+
 sup {
 	font-size:10pt;
 	line-height:8pt;
@@ -337,5 +338,13 @@ footer {
     font-size: 14pt;	    
     clear:both;
 
+}
+
+footer a:link{
+	color:white;
+}
+
+footer a:visted{
+	color:#353460
 }
 
