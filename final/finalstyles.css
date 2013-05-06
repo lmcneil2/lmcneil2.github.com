@@ -340,11 +340,11 @@ footer {
 
 }
 
-footer a:link{
+footer p a:link{
 	color:white;
 }
 
-footer a:visted{
-	color:#353460
+footer p a:visited{
+	color:#353460;
 }
 
